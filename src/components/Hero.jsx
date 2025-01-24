@@ -13,7 +13,7 @@ const Hero = () => {
         </div>
         </div>
         <div className="h-full w-1/2 py-24 flex items-center justify-center p-14">
-            <div className="h-full w-full bg-slate-600 flex items-center justify-center text-white"><h1>Big image Here</h1></div>
+            <div className="h-full w-full bg-slate-600 flex items-center justify-center text-white"><h1>Big image Here and testing</h1></div>
         </div>
     </div>
   )

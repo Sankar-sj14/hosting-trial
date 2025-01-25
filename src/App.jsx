@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import Features from "./components/Features";
 import Faq from "./components/Faq";
 import Footer from "./components/Footer";
+import SideBar from "./components/SideBar";
 
 export default function App() {
   const [showMenu, setShowMenu] = useState(false);
@@ -14,6 +15,7 @@ export default function App() {
 
   return (
     <div className="flex flex-col">
+    <SideBar/> 
     <Header/>
     <Hero/>
     <Features/>

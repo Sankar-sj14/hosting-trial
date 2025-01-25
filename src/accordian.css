@@ -1,0 +1,12 @@
+/* accordion.css */
+.accordion-trigger {
+    @apply bg-accordionTriggerBg text-accordionText p-4 rounded-md transition duration-300;
+  }
+  
+  .accordion-trigger:hover {
+    @apply bg-accordionTriggerHoverBg;
+  }
+  
+  .accordion-content {
+    @apply bg-accordionContentBg text-accordionContentText p-4;
+  }

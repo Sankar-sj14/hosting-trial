@@ -9,7 +9,13 @@ module.exports = {
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
   		},
-  		colors: {},
+  		colors: {
+			accordionTriggerBg: '#0A1228', // Dark Blue
+			accordionTriggerHoverBg: '#192E65', // Lighter Blue
+			accordionContentBg: '#374C82', // Light Gray
+			accordionText: '#ffffff', // White text
+			accordionContentText: '#D2DEFF',// Dark Gray text
+		}, 
   		keyframes: {
   			'accordion-down': {
   				from: {

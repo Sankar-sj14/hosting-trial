@@ -11,21 +11,21 @@ const Footer = () => {
   return (
     <Accordion type="single" collapsible>
   <AccordionItem value="item-1">
-    <AccordionTrigger>Is it accessible?</AccordionTrigger>
+    <AccordionTrigger>Question 1</AccordionTrigger>
     <AccordionContent>
-      Yes. It adheres to the WAI-ARIA design pattern.
+      Answer1
     </AccordionContent>
-    <AccordionTrigger>Is it accessible?</AccordionTrigger>
+    <AccordionTrigger>Question 2</AccordionTrigger>
     <AccordionContent>
-      Yes. It adheres to the WAI-ARIA design pattern.
+      Answer2
     </AccordionContent>
-    <AccordionTrigger>Is it accessible?</AccordionTrigger>
+    <AccordionTrigger>Question 3</AccordionTrigger>
     <AccordionContent>
-      Yes. It adheres to the WAI-ARIA design pattern.
+      Answer3
     </AccordionContent>
-    <AccordionTrigger>Is it accessible?</AccordionTrigger>
+    <AccordionTrigger>Question 4</AccordionTrigger>
     <AccordionContent>
-      Yes. It adheres to the WAI-ARIA design pattern.
+      Answer4
     </AccordionContent>
   </AccordionItem>
 </Accordion>

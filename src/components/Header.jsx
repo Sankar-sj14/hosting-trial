@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Menu } from 'lucide-react';
 import SideBar from './SideBar';
 
@@ -7,6 +7,7 @@ const Header = () => {
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
   const [isOpen,setisOpen] = useState(false)
+  const sidebarRef = useRef(null);
 
   const toggleSidebar = () =>{
     setisOpen((prev)=>!prev);
@@ -29,9 +30,25 @@ const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, [lastScrollY]);
 
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
+        setisOpen(false);
+      }
+    };
+
+    if (isOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+    } else {
+      document.removeEventListener('mousedown', handleClickOutside);
+    }
+
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, [isOpen]);
+
   return (
     <>
-    <SideBar isOpen={isOpen}/>
+    <SideBar isOpen={isOpen} sidebarRef={sidebarRef}/>
     <div className={`bg-gray-800 p-4 w-full fixed top-0 left-0 z-20 transition-transform duration-300 ${isVisible ? 'transform-none' : '-translate-y-full'}`}>
 
         <div className='p-8 flex justify-between'>

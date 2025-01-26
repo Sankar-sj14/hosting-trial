@@ -6,9 +6,10 @@ const Hero = () => {
     <div className='bg-slate-400 h-auto flex flex-col sm:flex-row'>
         <div className=' flex w-full sm:w-1/2 h-screen items-center justify-center bg-slate-200 p-4'>
         <div className=' h-1/2 w-full flex flex-col justify-center items-center bg-slate-300 p-14 gap-8'>
-        <h1 className='text-xl text-white flex justify-center p-4'>Experience the Presence</h1>
+        <h1 className='text-4xl text-black flex justify-center p-4 font-bold'>Advanced Business Solutions</h1>
         <img src='/images/XP Icon.png' className='w-full'></img>
-        <Button variant="outline" className="block mt-8">Explore</Button>
+        <h1 className='text-xl text-sky-800 flex justify-center p-4'>Experience the Presence</h1>
+        <Button variant="outline" className="block">Explore</Button>
 
         </div>
         </div>
